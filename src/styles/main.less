@@ -1,0 +1,64 @@
+@mainFont: Roboto, sans-serif;
+@titleFont: Lobster, cursive;
+@textColor: aliceblue;
+@colorPrimary: #eb3b5a;
+@buttonTextColor: black;
+@buttonColor: #f7b731;
+
+
+body {
+    background-color: @colorPrimary;
+    font-family: @mainFont;
+    color: @textColor;
+}
+
+h1 {
+    font-family: @titleFont;
+    font-size: 3em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @buttonColor;
+    color: @buttonTextColor;
+    font-family: @mainFont;
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    max-width: 120px;
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: @textColor;
+    border-bottom: 6px solid @textColor;
+}
+
+.resultado {
+    display: none;
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+
+    span {
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
+
+}
